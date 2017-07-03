@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Linux edu eddit</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/egzaminator-icon.png</normaloff>:/icons/egzaminator-icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="save">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>530</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>871</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Wpisz treść zadania:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="InfoWpis">
+       <property name="text">
+        <string>Wpisz treśc skryptu sprawdzającego:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="tresc">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>431</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextEditorInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>i</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="skrypt">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>431</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Podaj nazwę zadania:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nazwa">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>tresc</zorder>
+   <zorder>save</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>exit</zorder>
+   <zorder>info</zorder>
+   <zorder>skrypt</zorder>
+   <zorder>label_2</zorder>
+   <zorder>nazwa</zorder>
+  </widget>
+  <action name="actionTest1">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="text">
+    <string>Test2</string>
+   </property>
+  </action>
+  <action name="actionTest3">
+   <property name="text">
+    <string>Test3</string>
+   </property>
+  </action>
+  <action name="actionTest4">
+   <property name="text">
+    <string>Test4</string>
+   </property>
+  </action>
+  <action name="actionTest5">
+   <property name="text">
+    <string>Test5</string>
+   </property>
+  </action>
+  <action name="actionTest1_2">
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>815</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
